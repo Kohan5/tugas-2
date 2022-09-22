@@ -1,0 +1,112 @@
+[
+    {
+        "model":"mywatchlist.DaftarMywatchlist",
+        "pk":1,
+        "fields":{
+            "watched":"Sudah ditonton",
+            "title":"Blue Period",
+            "rating": "5/5",
+            "release_date": "15 Januari 2017",
+            "review": "Menjelaskan bagaimana perjalanan seorang mahasiswa seni murni dengan baik dan dikemas dengan konflik yang membuat kita tidak bisa berhenti menatap layar."
+        }
+    },
+    {
+        "model":"mywatchlist.DaftarMywatchlist",
+        "pk":2,
+        "fields":{
+            "watched":"Belum ditonton",
+            "title":"Naruto vs Goku",
+            "rating": "?/5",
+            "release_date": "30 Februari 2022",
+            "review": "Review belum tersedia karena belum ditonton."
+        }
+    },
+    {
+        "model":"mywatchlist.DaftarMywatchlist",
+        "pk":3,
+        "fields":{
+            "watched":"Belum ditonton",
+            "title":"Arcane",
+            "rating": "?/5",
+            "release_date": "6 November 2021",
+            "review": "Review belum tersedia karena belum ditonton."
+        }
+    },
+    {
+        "model":"mywatchlist.DaftarMywatchlist",
+        "pk":4,
+        "fields":{
+            "watched":"Sudah",
+            "title":"Frieren",
+            "rating": "5/5",
+            "release_date": "15 Januari 2017",
+            "review": "Walaupun tujuan utamanya dari perjalanannya tidak terlalu megah, tetapi konflik yang ditemukan selama perjalanan disertai alur maju mundur saat mengenang masa lalunya sangat menarik."
+        }
+    },
+    {
+        "model":"mywatchlist.DaftarMywatchlist",
+        "pk":5,
+        "fields":{
+            "watched":"Sudah",
+            "title":"Emoji Movies",
+            "rating": "1/5",
+            "release_date": "26 Juli 2017",
+            "review": "One wishes that this movie could be erased from existence - but for now, let's hope that the burning wreckage acts as a warning to never, ever do this again."
+        }
+    },
+    {
+        "model":"mywatchlist.DaftarMywatchlist",
+        "pk":6,
+        "fields":{
+            "watched":"Belum ditonton",
+            "title":"Bizarre Adventure of Bizar",
+            "rating": "?/5",
+            "release_date": "6 Agustus 2022",
+            "review": "Review belum tersedia karena belum ditonton."
+        }
+    },
+    {
+        "model":"mywatchlist.DaftarMywatchlist",
+        "pk":7,
+        "fields":{
+            "watched":"Belum ditonton",
+            "title":"Dota: Dragon's Blood",
+            "rating": "4/5",
+            "release_date": "6 November 2021",
+            "review": "Film ini berhasil membungkus cerita dota yang sangat luas menjadi sebuah film yang dapat ditonton oleh semua orang."
+        }
+    },
+    {
+        "model":"mywatchlist.DaftarMywatchlist",
+        "pk":8,
+        "fields":{
+            "watched":"Sudah ditonton",
+            "title":"Wreck-it Ralph",
+            "rating": "5/5",
+            "release_date": "2 November 2012",
+            "review": "Incredibly creative, making nonstop jokes via several angles of video game spoofing."
+        }
+    },
+    {
+        "model":"mywatchlist.DaftarMywatchlist",
+        "pk":9,
+        "fields":{
+            "watched":"Sudah ditonton",
+            "title":"Oyasumi Punpun",
+            "rating": "5/5",
+            "release_date": "6 November 2021",
+            "review": "Thank you for changing me from a normal human being to a depressed human being."
+        }
+    },
+    {
+        "model":"mywatchlist.DaftarMywatchlist",
+        "pk":10,
+        "fields":{
+            "watched":"Belum ditonton",
+            "title":"Cyberpunk Edgerunner",
+            "rating": "?/5",
+            "release_date": "13 September 2021",
+            "review": "Review belum tersedia karena belum ditonton."
+        }
+    }
+]

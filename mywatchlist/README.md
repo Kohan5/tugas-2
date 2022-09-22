@@ -1,7 +1,10 @@
 # **Tugas 2 PBP (Aplikasi Katalog)**
 
-## Link
-### [Heroku](https://tugas2kohan.herokuapp.com/katalog/)
+## Link Heroku dan Foto Postman
+- [Heroku](https://tugas2kohan.herokuapp.com/katalog/)
+- [Foto Postman XML](https://drive.google.com/file/d/1tnd_FIw9VqJ46me5zu5Vclhz6hQJ55et/view?usp=sharing)
+- [Foto Postman JSON](https://drive.google.com/file/d/1GWeWRDtyLm9dREqnLJvqd1pGKINT-_z7/view?usp=sharing)
+- [Foto Postman HTML](https://drive.google.com/file/d/1cC-trcrYfGW4485fsYBzfVw4f-4avfJw/view?usp=sharing)
 <br />
 
 ## Perbedaan antara JSON, XML, dan HTML
@@ -11,26 +14,16 @@ Untuk perbedaan JSON dan XML sendiri dapat dilihat dari dua hal. Pertama, XML me
 
 <br />
 
-## Cara pengimplementasian poin 1-4 (step kerjain tugas)
-### 1. Membuat sebuah fungsi pada views.py.
-#### a.) Import file models.py (agar database di models.py dapat diakses oleh views.py)
-#### b.) data disimpan pada suatu variabel list dan dimasukkan dalam scope context, beserta dengan informasi nama dan NPM
+## Mengapa kita memerlukan data delivery dalam pengimplementasian sebuah platform
+Data delivery sangat sering terjadi dalam pengimplementasi sebuah platform. Hal tersebut menandakan terjadinya pertukaran data user dengan data yang ada di server. Data delivery juga berguna untuk membantu mempermudah melakukan proses pengiriman data. Dalam penggunaannya, data delivery menggunakan format HTML, JSON, dan XML supaya data yang dikirim mudah dipahami berbagai programming language untuk didevelop serta dapat diterima dengan baik dan dipahami oleh user.
+
 <br />
 
-### 2. Membuat sebuah routing untuk memetakan fungsi yang telah kamu buat pada views.py
-#### a.) tambahkan ```path('katalog/', include('katalog.urls'))]``` pada pada variabel urlpatterns di urls.py pada project_django
-#### b.) import untuk file views.py yang berada pada folder katalog di urls.py pada folder katalog
-<br />
-    
-### 3. Memetakan data yang didapatkan ke dalam HTML.
-#### a.) cantumkan nama dan NPM dengan menggunakan syntax {{nama_variabel}} untuk kedua variabel tersebut yang sudah ditulis pada views.py.
-#### b.) menggunakan syntax {{nama_variabel}} untuk kedua variabel tersebut yang sudah ditulis pada views.py.
-<br />
-
-### 4. Melakukan deployment ke Heroku
-#### a.) buat aplikasi di web heroku
-#### b.) hubungkan aplikasi dengan repository tugas2 pada GitHub
-#### c.) tambahkan repository secret HEROKU_API_KEY dengan key yang diambil dari heroku
-#### d.) tambahkan repository secret HEROKU_API_NAME dengan nama aplikasi yang telah dibuat
-#### e.) run ulang proses deployment di tab action
-#### f.) Jika sudah ada centang hijau, situs aplikasi Heroku sudah bisa kita buka
+## Cara pengimplementasian poin-poin pengerjaan
+1. Buat environment di dalam folder yang sama dengan folder yang digunakan pada repository
+2. Buat aplikasi "mywatchlist" dengan cara menjalankan perintah 'python manage.py startapp watchlist'
+3. Lakukan route url dengan memasukkan 'path('mywatchlist/', include('mywatchlist.urls'))' supaya urlpatterns pada project_django dapat terhubung dengan mywatchlist
+4. Masukkan mywatchlist pada installed_app di setting.py
+5. Lakukan path route di dalam mywatchlist/urls.py agar terhubung dengan fungsi yang akan dijalankan pada mywatchlist/views.py
+6. Buat model data di mywatchlist/models.py dengan fields yang sudah ditentukan
+7. Lakukan migrasi dengan command 'python manage.py makemigrations' dan 'python manage.py migrate'

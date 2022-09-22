@@ -1,10 +1,12 @@
 # **Tugas 2 PBP (Aplikasi Katalog)**
 
 ## Link Heroku dan Foto Postman
-- [Heroku](https://tugas2kohan.herokuapp.com/katalog/)
 - [Foto Postman XML](https://drive.google.com/file/d/1tnd_FIw9VqJ46me5zu5Vclhz6hQJ55et/view?usp=sharing)
 - [Foto Postman JSON](https://drive.google.com/file/d/1GWeWRDtyLm9dREqnLJvqd1pGKINT-_z7/view?usp=sharing)
 - [Foto Postman HTML](https://drive.google.com/file/d/1cC-trcrYfGW4485fsYBzfVw4f-4avfJw/view?usp=sharing)
+- [HTML Heroku]()
+- [XML Heroku](https://tugas2kohan.herokuapp.com/mywatchlist/xml/)
+- [JSON Heroku](https://tugas2kohan.herokuapp.com/mywatchlist/json/)
 <br />
 
 ## Perbedaan antara JSON, XML, dan HTML

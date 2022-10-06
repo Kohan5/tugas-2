@@ -6,40 +6,68 @@
 
 {% block content %}
 
-<div class = "login">
+<head>
 
-    <h1>Login</h1>
+</head>
 
-    <form method="POST" action="">
-        {% csrf_token %}
-        <table>
-            <tr>
-                <td>Username: </td>
-                <td><input type="text" name="username" placeholder="Username" class="form-control"></td>
-            </tr>
-                    
-            <tr>
-                <td>Password: </td>
-                <td><input type="password" name="password" placeholder="Password" class="form-control"></td>
-            </tr>
+<body class="background">
+    <div class="loginFrame">
+        <div class="loginBox">
+            <h1>Login</h1>
 
-            <tr>
-                <td></td>
-                <td><input class="btn login_btn" type="submit" value="Login"></td>
-            </tr>
-        </table>
-    </form>
+            <form method="POST" action="">
+                {% csrf_token %}
+                <table style="margin-left:auto;margin-right:auto;">
+                    <tr>
+                        <td>Username: </td>
+                        <td><input type="text" name="username" placeholder="Username" class="form-control"></td>
+                    </tr>
 
-    {% if messages %}
-        <ul>
-            {% for message in messages %}
+                    <tr>
+                        <td>Password: </td>
+                        <td><input type="password" name="password" placeholder="Password" class="form-control"></td>
+                    </tr>
+
+                </table>
+                <input class="btn login_btn" type="submit" value="Login">
+            </form>
+
+            {% if messages %}
+            <ul>
+                {% for message in messages %}
                 <li>{{ message }}</li>
-            {% endfor %}
-        </ul>
-    {% endif %}     
-        
-    Belum mempunyai akun? <a href="{% url 'todolist:register' %}">Buat Akun</a>
+                {% endfor %}
+            </ul>
+            {% endif %}
 
-</div>
+            Belum mempunyai akun? <a href="{% url 'todolist:register' %}">Buat Akun</a>
+        </div>
+    </div>
+</body>
+
+<style>
+    .background {
+        color: #13293D;
+        background-image: linear-gradient(90deg, #1B98E0 0%, #247BA0 50%, #006494 70%);
+        text-align: center;
+        font-family: 'verdana';
+        padding: 10px;
+    }
+
+    .loginFrame {
+        background-color: #13293D;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        height: 50%;
+    }
+
+    .loginBox {
+        background-color: #f1f3ae;
+        padding: 10px 15px;
+    }
+    
+</style>
 
 {% endblock content %}
